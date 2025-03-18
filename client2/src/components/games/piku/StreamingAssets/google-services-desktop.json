@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "347141194000",
+    "project_id": "dyttostudios-42aa8",
+    "storage_bucket": "dyttostudios-42aa8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347141194000:android:a54bb06968ec1304f9a595",
+        "android_client_info": {
+          "package_name": "com.dyttostudios.PikuknockknockTest1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347141194000-jv6hpmv7c7vh81r3b6h4o7m37q5erqvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dyttostudios.PikuknockknockTest1",
+            "certificate_hash": "8bad78eb2b7608d6e8d7be4c02cd9e39a0889c14"
+          }
+        },
+        {
+          "client_id": "347141194000-hmq6diq7d7qqtnsssrqre7in7l7oq37d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJiFyjLm7aN3HTQrofqcJ63EyFu_ktZB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347141194000-hmq6diq7d7qqtnsssrqre7in7l7oq37d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
