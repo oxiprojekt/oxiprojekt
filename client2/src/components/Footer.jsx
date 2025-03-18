@@ -59,7 +59,7 @@ const Footer = () => {
             <p className="text-sm">
               Email us at{' '}
               <a href="mailto:info@example.com" className="text-rose-500 hover:underline">
-                info@example.com
+                info@oxiprojekt.com
               </a>
             </p>
           </div>

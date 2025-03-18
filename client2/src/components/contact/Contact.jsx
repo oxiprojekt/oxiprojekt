@@ -111,13 +111,13 @@ const Contact = () => {
               <p className='text-sm'>
                 General Inquiries:{' '}
                 <i className="text-rose-500 hover:underline">
-                  info@example.com
+                  info@oxiprojekt.com
                 </i>
               </p>
               <p className='text-sm'>
                 Hiring Queries:{' '}
                 <i className="text-rose-500 hover:underline">
-                  admin@example.com
+                  mikkiwaskel@gmail.com
                 </i>
               </p>
             </div>
