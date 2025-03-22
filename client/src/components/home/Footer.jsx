@@ -59,7 +59,7 @@ const Footer = () => {
               We are a passionate team dedicated to delivering quality service and building innovative solutions. Feel free to get in touch with us.
             </p>
             <p className="text-[12px] sm:text-sm">
-              Email us at{' '}
+              Email me at{' '}
               <a href="mailto:info@example.com" className="text-rose-500 hover:underline">
                 info@oxiprojekt.com
               </a>
