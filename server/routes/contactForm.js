@@ -8,12 +8,12 @@ const router = express.Router();
 
 // Create Nodemailer transporter using SMTP settings from .env
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
+  host: "smtp.hostinger.com",
+  port: "465",
   secure: true, // Use true for port 465
   auth: {
-    user: process.env.SMTP_USER, // Your email username
-    pass: process.env.SMTP_PASS, // Your email password
+    user: "info@oxiprojekt.com", // Your email username
+    pass: "7U%bZ$tYi5!a_D", // Your email password
   },
 });
 
@@ -35,7 +35,7 @@ router.post('/', async (req, res) => {
   } catch (error) {
     // Handle error if the email fails to send
     console.error('Error sending email:', error);
-    res.status(500).json({ message: 'Error sending email' });
+    res.status(500).json({ message: 'Error sending email'});
   }
 });
 
