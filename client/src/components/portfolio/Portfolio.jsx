@@ -258,7 +258,7 @@ const Portfolio = () => {
             {/* Image Modal */}
       {selectedArtwork && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
-          <button onClick={closeModal} className="absolute z-20 top-4 right-4 w-[34px] h-[34px] justify-items-center items-center bg-black rounded-full text-white text-2xl">
+          <button onClick={closeModal} className="absolute z-20 flex justify-center items-center top-4 right-4 w-[34px] h-[34px]  bg-black rounded-full text-white text-2xl">
             <FaTimes />
           </button>
           {/* Button left */}
