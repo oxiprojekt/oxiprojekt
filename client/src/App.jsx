@@ -8,6 +8,7 @@ import Abilities from './components/home/Abilities';
 import Experience from './components/home/Experience';
 
 import Portfolio from './components/portfolio/Portfolio';
+import Games from './components/games/Games';
 
 import ContactHeading from './components/contact/ContactHeading';
 import Contact from './components/contact/Contact';
@@ -41,6 +42,13 @@ const App = () => {
             <>
               <Header />
               <Portfolio />
+              <Footer />
+            </>
+          } />
+          <Route path="/games" element={
+            <>
+              <Header />
+              <Games />
               <Footer />
             </>
           } />
