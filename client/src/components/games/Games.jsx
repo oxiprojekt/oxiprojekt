@@ -1,7 +1,11 @@
 import React from "react";
+import Piku1 from "../../assets/games/piku1.mp4";
+import Killz1 from "../../assets/games/killz1.mp4";
 
 const Games = () => {
-  const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`;
+  const descriptionPiku1 = `Piku is a very kind bird game, who has forgotten her way to go back home and you have to help her to pass the difficulties and excape from the enemies.`;
+  const descriptionKillz1 = `It's a zombie game in 2D, where you have to kill the zombies that will come over you and you have to pass gravity up to down and it's a main mechanics here.`;
+  
   const handleGameButtonClick = (gameUrl) => {
     const isMobile = window.innerWidth <= 768; // You can adjust this value as needed for your mobile breakpoints
 
@@ -17,18 +21,21 @@ const Games = () => {
     <div className="flex items-center justify-center min-h-screen bg-black text-white px-4">
       {/* Left Section */}
       <div className="flex-1 flex flex-col items-center justify-center px-6">
-        <img
-          src="https://via.placeholder.com/200"
-          alt="Left"
-          className="mb-4"
+        <video
+          src={Piku1}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="mb-4 rounded-full w-[20vw] h-[20vw] object-cover"
         />
         <h2 className="text-2xl font-bold mb-2">PIKU</h2>
         <button 
           onClick={() => handleGameButtonClick("/games/piku/play/")}
-          className="bg-rose-500 text-white px-4 py-2 rounded mb-4">
+          className="bg-rose-500 text-white px-6 py-2 mb-4">
           PLAY
         </button>
-        <p className="text-center max-w-md">{description}</p>
+        <p className="text-center max-w-md text-[14px] font-extralight">{descriptionPiku1}</p>
       </div>
 
       {/* Vertical Divider */}
@@ -36,18 +43,21 @@ const Games = () => {
 
       {/* Right Section */}
       <div className="flex-1 flex flex-col items-center justify-center px-6">
-        <img
-          src="https://via.placeholder.com/200"
-          alt="Right"
-          className="mb-4"
+        <video
+          src={Killz1}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="mb-4 rounded-full w-[20vw] h-[20vw] object-cover"
         />
         <h2 className="text-2xl font-bold mb-2">KILL-Z</h2>
         <button 
           onClick={() => handleGameButtonClick("/games/killz/play/")}
-          className="bg-rose-500 text-white px-4 py-2 rounded mb-4">
+          className="bg-rose-500 text-white px-6 py-2 mb-4">
           PLAY
         </button>
-        <p className="text-center max-w-md">{description}</p>
+        <p className="text-center max-w-md text-[14px] font-extralight">{descriptionKillz1}</p>
       </div>
     </div>
   );

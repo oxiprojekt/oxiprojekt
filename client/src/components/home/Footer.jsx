@@ -56,7 +56,7 @@ const Footer = () => {
           {/* About Us Section */}
           <div className="md:w-1/3 space-y-4">
             <p className="text-[12px] sm:text-sm text-justify">
-              We are a passionate team dedicated to delivering quality service and building innovative solutions. Feel free to get in touch with us.
+              I am a passionate developer and designer both to work deliver on time with quality service and building innovative solutions. Feel free to get in touch with us.
             </p>
             <p className="text-[12px] sm:text-sm">
               Email me at{' '}
