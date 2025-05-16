@@ -105,7 +105,7 @@ const Contact = () => {
               Have a question or want to get in touch? Feel free to reach out to us for any inquiries, collaborations, or just to say hello.
             </p>
             <p className='text-sm'>
-              We're here to help you with your project needs or any assistance regarding our services. Don’t hesitate to contact us for more information.
+              I am here to help you with your project needs or any assistance regarding our services. Don’t hesitate to contact me for more information.
             </p>
             <div className="space-y-2">
               <p className='text-sm'>

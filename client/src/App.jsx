@@ -9,6 +9,7 @@ import Experience from './components/home/Experience';
 
 import Portfolio from './components/portfolio/Portfolio';
 import Games from './components/games/Games';
+import Gameplay from './components/gameplay/Gameplay';
 
 import ContactHeading from './components/contact/ContactHeading';
 import Contact from './components/contact/Contact';
@@ -49,6 +50,13 @@ const App = () => {
             <>
               <Header />
               <Games />
+              <Footer />
+            </>
+          } />
+          <Route path="/gameplay" element={
+            <>
+              <Header />
+              <Gameplay />
               <Footer />
             </>
           } />

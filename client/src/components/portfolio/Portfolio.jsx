@@ -183,6 +183,17 @@ const Portfolio = () => {
             </div>
           </a>
         </div>
+        <div className="absolute z-10 bottom-6 right-6 hidden sm:flex flex-col gap-4">
+          
+          {/* Button 1 */}
+          <a
+            onClick={() => handleGameButtonClick("/gameplay/")}
+            className="relative group w-28 h-12 flex items-center justify-items-center justify-center  bg-black text-white cursor-pointer"
+          >
+            <h1 className="text-md z-0 font-[800]">Gameplay</h1>
+          </a>
+        </div>
+        
       </div>
 
             {/* Second Section - Image Containers */}
