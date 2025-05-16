@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 
 // Import images
-import BackgroundImage1 from "../../assets/portfolioimgs/1.png";
+import BackgroundImage1 from "../../assets/portfolioimgs/1.jpg";
 import BackgroundImage2 from "../../assets/portfolioimgs/2.jpg";
 import BackgroundImage2vert from "../../assets/portfolioimgs/2vert.jpg";
 import ImageA1 from "../../assets/portfolioimgs/a1.jpg";
