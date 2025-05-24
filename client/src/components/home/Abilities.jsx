@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 
-import image1 from '../../assets/ability1.png';
+import image1 from '../../assets/ability1.jpg';
 import image2 from '../../assets/ability2.jpg';
 import image3 from '../../assets/ability3.jpg';
 

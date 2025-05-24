@@ -46,7 +46,7 @@ const NavMobile = () => {
 
                 {/* Floating Arrow Button */}
                 <button
-                    className="absolute bottom-12 right-[38%]"
+                    className="absolute bottom-32 right-[38%]"
                     onClick={toggleNavbar}
                     style={{
                         animation: 'floating 1s ease-in-out infinite'

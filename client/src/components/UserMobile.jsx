@@ -66,21 +66,21 @@ const UserMobile = () => {
                     <li className="text-lg mt-6">Quick Log In</li>
 
                     {/* Username and Password Fields */}
-                    <li className="mt-4 w-full max-w-xs text">
+                    <li className="mt-0 sm:mt-4 w-full max-w-xs text">
                         <input
                             type="text"
                             placeholder="Username"
-                            className="w-full p-2 bg-neutral-700 text-white rounded mb-4"
+                            className="w-full p-2 bg-neutral-700 text-white  mb-4"
                         />
                         <input
                             type="password"
                             placeholder="Password"
-                            className="w-full p-2 bg-neutral-700 text-white rounded"
+                            className="w-full p-2 bg-neutral-700 text-white"
                         />
                     </li>
 
                     {/* Log In Button */}
-                    <li className="mt-4 w-full max-w-xs">
+                    <li className="mt-0 sm:mt-4 w-full max-w-xs">
                         <button className="w-full p-2 bg-rose-500 text-white">
                             Log In
                         </button>
@@ -89,7 +89,7 @@ const UserMobile = () => {
 
                 {/* Floating Arrow Button */}
                 <button
-                    className="absolute bottom-12 right-[38%] floating-button"
+                    className="absolute bottom-28 right-[60vw/2] md:right-[40vw/2] lg:right-[25vw/2]  floating-button"
                     onClick={toggleNavbar}
                 >
                     <MoveRight size={32} />
