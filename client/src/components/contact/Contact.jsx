@@ -64,7 +64,10 @@ const Contact = () => {
       });
   
       if (response.ok) {
-        alert('Your message has been sent!');
+        // Delay the success alert by 2–3 seconds
+        setTimeout(() => {
+          alert('Your message has been sent!');
+        }, 2500);
         setFormData({ name: '', email: '', message: '', queryType: 'wants to ask something' });
       } else {
         const errorData = await response.json();

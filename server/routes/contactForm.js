@@ -9,34 +9,42 @@ const router = express.Router();
 // Create Nodemailer transporter using SMTP settings from .env
 const transporter = nodemailer.createTransport({
   host: "smtp.hostinger.com",
-  port: "465",
+  port: 465,
   secure: true, // Use true for port 465
   auth: {
-    user: "info@oxiprojekt.com", // Your email username
-    pass: "7U%bZ$tYi5!a_D", // Your email password
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
   },
 });
 
-// POST route to send the email
-router.post('/', async (req, res) => {
-  const { name, email, message, queryType } = req.body;
-
+// Async function to send the email
+const sendEmail = async ({ name, email, message, queryType }) => {
   const mailOptions = {
-    from: process.env.SMTP_USER,  // Sender's email (SMTP user)
-    to: process.env.SMTP_USER,  // Email address where you'd like to receive the message
-    subject: `${name} ${queryType}`,  // Email subject (dynamic)
-    text: `You have received a new message:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}\nQuery Type: ${queryType}`,  // Email content with details
+    from: process.env.SMTP_USER,
+    to: process.env.SMTP_USER,
+    subject: `${name} ${queryType}`,
+    text: `You have received a new message:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}\nQuery Type: ${queryType}`,
   };
 
   try {
-    // Try to send the email
     await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: 'Email sent successfully' });
+    console.log(`Email sent from ${email}`);
   } catch (error) {
-    // Handle error if the email fails to send
     console.error('Error sending email:', error);
-    res.status(500).json({ message: 'Error sending email'});
   }
+};
+
+// POST route to receive form data
+router.post('/', (req, res) => {
+  const { name, email, message, queryType } = req.body;
+
+  // Respond to the user immediately
+  res.status(200).json({ message: 'Form received. We will contact you shortly!' });
+
+  // Send email in the background
+  setImmediate(() => {
+    sendEmail({ name, email, message, queryType });
+  });
 });
 
 module.exports = router;
