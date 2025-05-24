@@ -8,8 +8,9 @@ import Abilities from './components/home/Abilities';
 import Experience from './components/home/Experience';
 
 import Portfolio from './components/portfolio/Portfolio';
-import Games from './components/games/Games';
-import Gameplay from './components/gameplay/Gameplay';
+import Games from './components/portfolio/games/Games';
+import Gameplay from './components/portfolio/gameplay/Gameplay';
+import Design from './components/portfolio/design/Design';
 
 import ContactHeading from './components/contact/ContactHeading';
 import Contact from './components/contact/Contact';
@@ -43,20 +44,27 @@ const App = () => {
             <>
               <Header />
               <Portfolio />
-              <Footer />
+              <div className="relative z-50 w-full"><Footer /></div>
             </>
           } />
-          <Route path="/games" element={
+          <Route path="/portfolio/games" element={
             <>
               <Header />
               <Games />
               <Footer />
             </>
           } />
-          <Route path="/gameplay" element={
+          <Route path="/portfolio/gameplay" element={
             <>
               <Header />
               <Gameplay />
+              <Footer />
+            </>
+          } />
+          <Route path="/portfolio/design" element={
+            <>
+              <Header />
+              <Design />
               <Footer />
             </>
           } />

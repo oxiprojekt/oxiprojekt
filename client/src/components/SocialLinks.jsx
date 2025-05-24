@@ -30,7 +30,7 @@ const SocialLinks = () => {
         <li className="hover:text-accent cursor-pointer">
           <a
             className="transition-all duration-300"
-            href="https://www.linkedin.com/oxiprojekt"
+            href="https://www.linkedin.com/in/oxi-projekt-589a29336"
             target="_blank"
             rel="noopener noreferrer"
           >
