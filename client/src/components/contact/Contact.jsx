@@ -8,6 +8,8 @@ const Contact = () => {
   
     // IntersectionObserver to detect when the section enters the viewport
     useEffect(() => {
+      window.scrollTo(0, 0);
+
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
@@ -110,7 +112,7 @@ const Contact = () => {
             <p className='text-sm'>
               I am here to help you with your project needs or any assistance regarding our services. Don’t hesitate to contact me for more information.
             </p>
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <p className='text-sm'>
                 General Inquiries:{' '}
                 <i className="text-rose-500 hover:underline">
@@ -123,7 +125,7 @@ const Contact = () => {
                   mikkiwaskel@gmail.com
                 </i>
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Section (Contact Form) */}

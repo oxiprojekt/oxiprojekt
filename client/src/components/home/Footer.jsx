@@ -60,7 +60,7 @@ const Footer = () => {
             </p>
             <p className="text-[12px] sm:text-sm">
               Email me at{' '}
-              <a href="mailto:info@example.com" className="text-rose-500 hover:underline">
+              <a href="mailto:info@oxiprojekt.com" className="text-rose-500 hover:underline">
                 info@oxiprojekt.com
               </a>
             </p>
