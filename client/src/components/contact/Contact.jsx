@@ -82,6 +82,11 @@ const Contact = () => {
   };
 
   return (
+    <>
+    
+    
+    
+
     <section className="bg-black text-white pt-8 px-4 sm:px-16">
       {/* Contact Content */}
       <div className="p-0">
@@ -216,6 +221,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

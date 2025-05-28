@@ -12,13 +12,6 @@ const Portfolio = () => {
   // Artwork containers (Horizontal alignment)
   const containers = [
     {
-      title: "Games",
-      shortDescription: "You can test the game on the browser here",
-      longDescription: "This project showcases the creation of a highly detailed, hard-surface 3D model of the iconic 'Quadra V-Tech' car, inspired by the Cyberpunk aesthetic. Using 3D Maya, I meticulously modeled the car, paying close attention to every intricate detail while ensuring the optimization of polygon count, carefully avoiding the use of unnecessary triangle polygons. Throughout the process, I utilized various modeling tools and techniques, such as precision UV mapping and strategic edge flow, to ensure smooth surfaces and accurate proportions. For texturing, I implemented advanced material techniques to replicate the reflective and metallic surfaces typical of Cyberpunk vehicles, including normal and specular maps to bring the car to life. Mesh lighting was added to enhance the cyberpunk atmosphere, giving it a futuristic, glowing edge. The final rendering and lighting were done in Corona, where I set up a visually striking scene with realistic lighting, ensuring an ideal balance of shadows and highlights to capture the essence of this futuristic vehicle. This project blends technical skill with creative vision, bringing a piece of Cyberpunk to life.",
-      images: [/*ImageA1*/],
-      url: "portfolio/games"
-    },
-    {
       title: "Gameplay",
       shortDescription: "Here, you will see videos about game mechanics",
       longDescription: "I created a vibrant 'Ship on the Sea' painting using acrylic paints, where I aimed to capture the dynamic energy of the ocean and the grandeur of the ship navigating through the waves. The painting reflects a rich color palette, with deep blues, bright whites, and various shades of browns and grays, bringing both the sea and the ship to life. To achieve a sense of movement and depth, I employed a variety of brush techniques, using large flat brushes for broad strokes and finer detail brushes to meticulously capture the ship's sails, rigging, and texture of the water. The textured waves and dramatic sky were painted with layers of acrylic, adding dimension and intensity to the scene. Each brushstroke was carefully placed to express the power and beauty of the sea, creating a timeless scene of adventure and exploration. This artwork showcases my versatility in using different brushes and my skill in conveying emotion through color and composition.",
@@ -67,7 +60,7 @@ const Portfolio = () => {
 
       {/* Fixed Background Image Grid */}
       <div className="relative lg:fixed w-full min-h-screen  content-center lg:pt-40 p-4 sm:p-8 bg-black">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
           {containers.map((container, index) => (
             <div
               key={index}
