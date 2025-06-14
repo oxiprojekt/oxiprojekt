@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { Helmet } from 'react-helmet';
 
 import Header from './components/home/Header';
 import Footer from './components/home/Footer';
@@ -23,15 +24,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <>
-              <Header />
-              <Hero />
-              <Abilities />
-              <Experience />
-              <Footer />
-            </>
-          } />
-          <Route path="/home" element={
-            <>
+              {/* <Helmet>
+                <title>OxiProjekt | Technical Artist and Game Developer </title>
+                <meta name="description" content="OxiProjekt is a creative portfolio about game developer, design, storytelling and inspiring content. Dive into my world of visual rendering techniques and vibes."></meta>
+              </Helmet> */}
               <Header />
               <Hero />
               <Abilities />
@@ -42,6 +38,10 @@ const App = () => {
           } />
           <Route path="/portfolio" element={
             <>
+              {/* <Helmet>
+                <title>OxiProjekt | Portfolio | Gameplay Design Art </title>
+                <meta name="description" content="Keep in touch for creative game projekts and inquiries" />
+              </Helmet> */}
               <Header />
               <Portfolio />
               <div className="relative z-50 w-full"><Footer /></div>
@@ -49,6 +49,10 @@ const App = () => {
           } />
           <Route path="/portfolio/games" element={
             <>
+              {/* <Helmet>
+                <title>OxiProjekt | Creative designs and artworks </title>
+                <meta name="description" content="You can test the games in your browser, there is no need to download it." />
+              </Helmet> */}
               <Header />
               <Games />
               <Footer />
@@ -56,6 +60,10 @@ const App = () => {
           } />
           <Route path="/portfolio/gameplay" element={
             <>
+              {/* <Helmet>
+                <title>OxiProjekt | Game mechanics gameplay videos </title>
+                <meta name="description" content="Lets learn with me for latest trend in game to make prototype mechanics and I'm providing free source of code for it." />
+              </Helmet> */}
               <Header />
               <Gameplay />
               <Footer />
@@ -63,6 +71,10 @@ const App = () => {
           } />
           <Route path="/portfolio/design" element={
             <>
+              {/* <Helmet>
+                <title>OxiProjekt | Creative designs and artworks </title>
+                <meta name="description" content="Get in touch with OxiProjekt for looking creative contents and games. I'm here to bring creative ideas to life." />
+              </Helmet> */}
               <Header />
               <Design />
               <Footer />
@@ -70,6 +82,10 @@ const App = () => {
           } />
           <Route path="/contact" element={
             <>
+              {/* <Helmet>
+                <title>OxiProjekt | Contact or Hire me</title>
+                <meta name="description" content="You can contact me for hiring purpose and I'm here for giving answers for your inquiries also." />
+              </Helmet> */}
               <Header />
               <ContactHeading />
               <Contact />

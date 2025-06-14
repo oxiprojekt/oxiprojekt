@@ -1,6 +1,10 @@
 import React from "react";
+import { useEffect } from 'react';
+
 import Piku1 from "../../../assets/games/piku1.mp4";
 import Killz1 from "../../../assets/games/killz1.mp4";
+
+
 
 const Games = () => {
   const descriptionPiku1 = `Piku is a very kind bird game, who has forgotten her way to go back home and you have to help her to pass the difficulties and escape from the enemies.`;
@@ -8,6 +12,9 @@ const Games = () => {
 
   const prototypeDescription = `Click here! There are few gameplay about prototype mechanics for games, prototype such as AR/VR, Immersive platform, Sliding puzzle, Networked multiplayer, 3D physics, AI Nav-Mesh amd more.`;
 
+  useEffect(() => {
+        window.scrollTo(0, 0);
+  }, []);
   const handleGameButtonClick = (gameUrl, bypassMobileCheck = false) => {
     const isMobile = window.innerWidth <= 768;
     if (!bypassMobileCheck && isMobile) {
